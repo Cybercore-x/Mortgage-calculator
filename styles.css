@@ -1,0 +1,157 @@
+body {
+    font-family: "ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:  hsl(203, 41%, 72%);
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+h1 {
+    color: hsl(202, 55%, 16%);
+    font-size: 1.5rem;
+}
+#clear-all {
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    text-decoration: underline;
+    color: hsl(200, 26%, 54%);
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+#clear-all:active {
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+    color: hsl(61, 70%, 52%);
+}
+.input-group {
+    color:  hsl(202, 55%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-container span {
+    position: absolute;
+    right: 0rem;
+    top: .1rem;
+    z-index: 1000;
+    background-color:  hsl(202, 86%, 94%);
+    opacity: 70%;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: .5rem;
+}
+input::placeholder {
+    font-weight: bold;
+    color:  hsl(202, 55%, 16%);
+    opacity: 50%;
+}
+label[for=amount],
+label[for=term],
+label[for=rate],
+label[for=type] {
+    font-weight: bold;
+    color: hsl(200, 26%, 54%);
+    margin-top: .8rem;
+}
+#mortgage-amount, 
+#mortgage-term, 
+#interest-rate {
+    border: 1px solid  hsl(202, 55%, 16%);
+    border-radius: .2rem;
+    position: relative;
+    padding: .5em;
+    width: 90%;
+    padding-right: 2rem;
+    font-weight: bold;
+    color: hsl(202, 55%, 16%);
+}
+#mortgage-amount:hover, 
+#mortgage-term:hover, 
+#interest-rate:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+#mortgage-amount:focus, 
+#mortgage-term:focus, 
+#interest-rate:focus {
+    border: 2px solid hsl(61, 70%, 52%);
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:  hsl(202, 55%, 16%);
+    font-weight: bold;
+    gap: 0;
+}
+
+.radio-span {
+    border: 1px solid hsl(202, 55%, 16%);
+    padding: .5rem;
+    border-radius: .2rem;
+    margin-top: .4rem;
+    cursor: pointer;
+}
+input[type="radio"] {
+    accent-color: hsl(61, 70%, 52%);
+    cursor: pointer;
+    outline: none;
+}
+.radio-span:hover {
+    border: 2px solid hsl(61, 70%, 52%);
+}
+#Calculate {
+    background-color: hsl(61, 70%, 52%);
+    color:  hsl(202, 55%, 16%);
+    padding: .6rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+#Calculate:hover {
+    background-color: hsla(61, 70%, 52%, 0.692);
+    opacity: 100%;
+}
+.footer {
+    background-color: hsl(202, 55%, 16%);
+    color: white;
+    border-radius: .5rem;
+    margin: 1.5rem -2rem -2rem -2rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 3; 
+    padding-right: 3; 
+}
+.footer-div h2, p{
+    text-align: center;
+}
+#result {
+    text-align: center;
+    color: hsl(61, 70%, 52%);
+    font-weight: bold;
+}
